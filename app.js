@@ -61,6 +61,6 @@ app.use((req, res, next) => {
   res.status(404).render('404', { message: 'Page not found' });
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server started on port ${port}`);
 });
