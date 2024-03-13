@@ -40,7 +40,7 @@ app.post("/compose", (req, res) => {
     content: req.body.blogContent,
   };
   posts.push(post);
-  res.redirect("/");
+  res.redirect("/home");
 });
 
 app.get("/posts/:postId", (req, res) => {
